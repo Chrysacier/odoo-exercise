@@ -1,0 +1,30 @@
+$nav-tabs-border-radius: 0;
+$card-inner-border-radius: 0;
+$card-height: 100%;
+$spacer: 10px;
+$card-border-radius: 0;
+$nav-tabs-border-width: 0;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+.card-body{
+
+    // Used this to specify the height of sub-navigation
+    .nav-item{
+        height: calc(($card-height) / 3);
+    }
+
+    .row {
+        flex-direction: column;
+    
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+    }
+}
+
+// I tried using the class font-weight-bold as written in the doc, but it didn't work as planned so I did this
+.card-title, .card-subtitle{
+    font-weight: $font-weight-bold;
+}
