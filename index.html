@@ -17,60 +17,60 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <div class="card m-5" style="max-width: 600px;">
-      <div class="card-header border-0 px-3 pt-3 bg-dark" >
+    <div class="card bg-light m-5 rounded" style="max-width: 600px;">
+      <div class="card-header px-4 pt-4 bg-light rounded-top" >
         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-          <li class="nav-item mx-2 bg-light">
-            <a class="nav-link border-0  px-6 active" id="first-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab 1" aria-selected="true">Tab 1</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link px-6 active" id="first-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab 1" aria-selected="true">Tab 1</a>
           </li>
-          <li class="nav-item mx-2 bg-light">
-            <a class="nav-link border-0  px-6" id="second-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab 2" aria-selected="false">Tab 2</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link px-6" id="second-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab 2" aria-selected="false">Tab 2</a>
           </li>
-          <li class="nav-item mx-2 bg-light">
-            <a class="nav-link border-0  px-6" id="third-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab 3" aria-selected="false">Tab 3</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link px-6" id="third-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab 3" aria-selected="false">Tab 3</a>
           </li>
           <li class="nav-item mx-2 ">
-            <a class="nav-link border-0  px-6 disabled text-white bg-secondary" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link px-6 disabled text-muted" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </div>
 
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
-          <div class="card-body p-0">
-            <h5 class="card-title p-0 mx-6 mt-6">Card title</h5>
-            <h6 class="card-subtitle p-0 mx-6 mb-4 text-muted">Card subtitle</h6>
+          <div class="card-body bg-tertiary text-dark p-0">
             <div class="row g-0">
-              <div class="col">
-                <ul class="nav nav-tabs flex-column h-100" id="myTab" role="tablist" >
-                  <li class="nav-item">
-                    <a class="nav-link border-top border-light active h-100 d-flex align-items-center px-6 py-3" id="one-tab" data-toggle="tab" href="#first-item" role="tab" aria-controls="first-item" aria-selected="true">An item</a>
+              <div class="col order-2">
+                <h4 class="card-title px-4">Card title</h4>
+                <h6 class="card-subtitle p-0 mx-4 mb-5 text-muted">Card subtitle</h6>
+                <ul class="nav nav-tabs card-body-tabs flex-row justify-content-start h-100 px-4 py-4 border-top" id="myTab" role="tablist" >
+                  <li class="nav-item ml-0 rounded">
+                    <a class="nav-link active h-100 d-flex align-items-center rounded px-6 py-3" id="one-tab" data-toggle="tab" href="#first-item" role="tab" aria-controls="first-item" aria-selected="true">An item</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link border-top border-bottom border-light h-100 d-flex align-items-center px-6 py-3" id="two-tab" data-toggle="tab" href="#second-item" role="tab" aria-controls="second-item" aria-selected="false">A second item</a>
+                  <li class="nav-item mx-6 rounded">
+                    <a class="nav-link h-100 d-flex align-items-center px-6 py-3 rounded" id="two-tab" data-toggle="tab" href="#second-item" role="tab" aria-controls="second-item" aria-selected="false">A second item</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link border-light h-100 d-flex align-items-center px-6 py-3" id="three-tab" data-toggle="tab" href="#third-item" role="tab" aria-controls="third-item" aria-selected="false">A third item</a>
+                  <li class="nav-item rounded">
+                    <a class="nav-link h-100 d-flex align-items-center px-6 py-3 rounded" id="three-tab" data-toggle="tab" href="#third-item" role="tab" aria-controls="third-item" aria-selected="false">A third item</a>
                   </li>
                 </ul>
               </div>
               <div class="col">
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content p-4 pb-3" id="myTabContent">
                   <div class="tab-pane fade show active" id="first-item" role="tabpanel" aria-labelledby="first-item">
-                    <img src="https://via.placeholder.com/800x640.png/1400FF/ffffff?text=Pic-1" class="card-img" alt="...">
+                    <img src="https://via.placeholder.com/1600x900.png/1400FF/ffffff?text=Pic-1" class="card-img rounded" alt="...">
                   </div>
                   <div class="tab-pane fade" id="second-item" role="tabpanel" aria-labelledby="second-item">
-                    <img src="https://via.placeholder.com/800x640.png/FEFF00/000000?text=Pic-2" class="card-img" alt="...">
+                    <img src="https://via.placeholder.com/1600x900.png/FEFF00/000000?text=Pic-2" class="card-img rounded" alt="...">
                   </div>
                   <div class="tab-pane fade" id="third-item" role="tabpanel" aria-labelledby="third-item">
-                    <img src="https://via.placeholder.com/800x640.png/000000/ffffff?text=Pic-3" class="card-img" alt="...">
+                    <img src="https://via.placeholder.com/1600x900.png/000000/ffffff?text=Pic-3" class="card-img rounded" alt="...">
                   </div>
                 </div>
                 
               </div>
             </div>
           </div>
-          <div class="card-footer px-6 py-3 text-white bg-dark">
+          <div class="card-footer rounded-bottom border-0 px-6 py-4 text-dark bg-light">
             2 days ago
           </div>
         </div>
@@ -78,19 +78,19 @@
           <div class="card-body py-7">
             <div class="d-flex flex-column align-items-center">
               <strong>Loading...</strong>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
-              <path fill="#000" d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50"><animateTransform attributeName="transform" attributeType="XML" dur="1s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/></path>
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+              <path fill="#0d6efd" d="M73 50c0-12.7-10.3-23-23-23S27 37.3 27 50m3.9 0c0-10.5 8.5-19.1 19.1-19.1S69.1 39.5 69.1 50"><animateTransform attributeName="transform" dur="1s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/></path>
             </svg>
             </div>
           </div>
-          <div class="card-footer text-white bg-dark px-6 py-3">
+          <div class="card-footer rounded-bottom border-0 px-6 py-4 text-dark bg-light">
             2 days ago
           </div>
         </div>
         <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="row no-gutters">
+          <div class="row no-gutters p-6">
             <div class="col-md-4">
-              <img src="https://via.placeholder.com/640x640.png/ff0000/ffffff?text=IMAGE" class="card-img" alt="...">
+              <img src="https://via.placeholder.com/640x640.png/ff0000/ffffff?text=IMAGE" class="card-img rounded" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -100,7 +100,7 @@
               </div>
             </div>
           </div>
-          <div class="card-footer text-white bg-dark px-6 py-3">
+          <div class="card-footer rounded-bottom border-0 px-6 py-4 text-dark bg-light">
             2 days ago
           </div>
         </div>

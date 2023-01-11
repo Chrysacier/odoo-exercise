@@ -1,11 +1,35 @@
 $nav-tabs-border-radius: 0;
 $card-inner-border-radius: 0;
+$card-cap-padding-y: 0;
+$card-cap-padding-x: 0;
 $card-height: 100%;
 $spacer: 10px;
 $card-border-radius: 0;
 $nav-tabs-border-width: 0;
+$nav-link-color: #000;
+$body-bg: #EEEEF1;
+$dark: #1B1C25;
+$secondary: #EEEEF1;
+$light: #fff;
+$card-bg: #EEEEF1;
+$dark: #000;
+$nav-tabs-link-active-color: #000;
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+.card-header-tabs .nav-link{
+    color: #949494;
+}
+
+.card-header-tabs .nav-link.active{
+    border-bottom: 2px solid #000;
+    background: none;
+}
+
+.card-body-tabs .nav-link.active{
+    background: #EEEEF1;
+}
+
 
 
 .card-body{
@@ -15,16 +39,8 @@ $nav-tabs-border-width: 0;
         height: calc(($card-height) / 3);
     }
 
+
     .row {
         flex-direction: column;
-    
-        @include media-breakpoint-up(md) {
-            flex-direction: row;
-        }
     }
-}
-
-// I tried using the class font-weight-bold as written in the doc, but it didn't work as planned so I did this
-.card-title, .card-subtitle{
-    font-weight: $font-weight-bold;
 }
